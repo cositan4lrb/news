@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent" android:layout_height="200dip">
+
+    <com.hust.news.view.HorizontalScrollViewPager
+        android:id="@+id/hsvp_news_menu_tab_detail_top_news" android:layout_width="fill_parent"
+        android:layout_height="200dip"></com.hust.news.view.HorizontalScrollViewPager>
+
+    <!-- 注意 background可以定义成argb四个变量的模式 -->
+
+    <RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true" android:background="#77000000"
+        android:paddingBottom="5dip" android:paddingLeft="10dip" android:paddingRight="10dip"
+        android:paddingTop="5dip">
+
+        <TextView android:id="@+id/vp_news_menu_tab_detail_description"
+            android:layout_width="wrap_content" android:layout_height="wrap_content"
+            android:text="图片的默认描述信息" android:textColor="#FFFFFF"></TextView>
+
+        <!-- 将控件置于父元素右侧 用的是alignParentRight 给个true -->
+
+        <LinearLayout android:id="@+id/vp_news_menu_tab_detail_point_group"
+            android:layout_width="wrap_content" android:layout_height="wrap_content"
+            android:layout_alignParentRight="true" android:layout_centerVertical="true"
+            android:orientation="horizontal"></LinearLayout>
+    </RelativeLayout>
+</RelativeLayout>

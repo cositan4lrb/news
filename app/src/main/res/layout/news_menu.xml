@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent" android:layout_height="fill_parent"
+    android:orientation="vertical">
+
+    <LinearLayout android:layout_width="fill_parent" android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <!-- 注意 由于菜单加载的太多 需要适应屏幕 使用width=0 weight=1 法 -->
+        <com.viewpagerindicator.TabPageIndicator android:id="@+id/tpi_news_menu"
+            android:layout_width="0dip" android:layout_height="wrap_content"
+            android:layout_weight="1" />
+
+        <!-- 注意 图片按钮在父元素中垂直居中 用的是gravity_center verticle -->
+        <ImageButton android:id="@+id/ib_news_next_tab" android:layout_width="wrap_content"
+            android:layout_height="wrap_content" android:layout_gravity="center_vertical"
+            android:layout_marginLeft="20dip" android:layout_marginRight="20dip"
+            android:background="@android:color/transparent"
+            android:src="@drawable/news_cate_arr"></ImageButton>
+    </LinearLayout>
+
+    <android.support.v4.view.ViewPager android:id="@+id/vp_news_menu_content"
+        android:layout_width="fill_parent" android:layout_height="0dp" android:layout_weight="1" />
+
+</LinearLayout>

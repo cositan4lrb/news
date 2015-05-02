@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TextView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="wrap_content"
+    android:drawableLeft="@drawable/left_menu_bg" android:drawablePadding="10dip"
+    android:enabled="false" android:padding="20dip" android:text="新闻"
+    android:textColor="@drawable/left_menu_textcolor" android:textSize="20sp">
+
+    <!-- 注意如果enable选成true 那么初始字体的颜色就是 选中的红色 -->
+    <!-- 所有的需要按下变图的都这么去定义 先在drawable定义xml 两种状态 然后再布局里引入就好了 -->
+    <!-- 在文字的左边定义图片 用到的是drawbleLeft -->
+    <!-- padding是整个边距 20dip的话 文本框就不会贴屏幕 -->
+    <!-- 注意enable这个 属性 不enable就无法点击 -->
+    <!-- drawablepadding是指定文字与图片的间距的 -->
+
+</TextView>
